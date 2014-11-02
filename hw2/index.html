@@ -4,8 +4,9 @@
     <head>
         <meta charset=utf-8>
         <title>Simple HTML5 HW</title>
+        <link href="http://necolas.github.io/normalize.css/3.0.2/normalize.css" rel="stylesheet" />
+        <link href="style.css" rel="stylesheet" />
     </head>
- 
     <body>
         <!--   1.  navigation menu that has several anchored links that are pointing to different sections on page ('#about, '#faq', '#contacts', '#register') -->
         <nav>
@@ -22,11 +23,11 @@
 
             <img src="https://octodex.github.com/images/Professortocat_v2.png" width="224" style="float: right;" alt="Lipsum">
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris imperdiet purus vitae turpis sollicitudin semper. Quisque pharetra orci sollicitudin lectus placerat, ac lobortis augue malesuada. Vivamus ipsum ante, hendrerit eget mattis sed, eleifend id nunc. Nunc in volutpat felis, eu malesuada libero. Sed scelerisque augue urna, eu porttitor ipsum mollis id. Fusce in rutrum tortor, eget ornare lorem. Proin accumsan orci at nulla vulputate, et luctus felis imperdiet. Mauris pulvinar tortor sed lacus consectetur facilisis. Vestibulum nec ullamcorper urna. Fusce a felis vitae leo molestie luctus nec sit amet nibh. Etiam nec purus vel elit vulputate volutpat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris imperdiet purus vitae turpis sollicitudin semper. Quisque pharetra orci sollicitudin lectus placerat, ac lobortis augue malesuada. <a href="#">Vivamus</a> ipsum ante, hendrerit eget mattis sed, eleifend id nunc. Nunc in volutpat felis, eu malesuada libero. Sed scelerisque augue urna, eu porttitor ipsum mollis id. Fusce in rutrum tortor, eget ornare lorem. Proin accumsan orci at nulla vulputate, et luctus felis imperdiet. Mauris pulvinar tortor sed lacus consectetur facilisis. Vestibulum nec ullamcorper urna. Fusce a felis vitae leo molestie luctus nec sit amet nibh. Etiam nec purus vel elit vulputate volutpat.</p>
 
             <p>In dictum massa massa, ac auctor mauris finibus in. Praesent pretium ac metus id consectetur. Ut scelerisque quis sapien eget pharetra. Proin iaculis ipsum id turpis sollicitudin, eu elementum elit interdum. Mauris eget mollis arcu, vitae egestas arcu. Integer rhoncus nulla est, sed volutpat velit varius eget. Donec tincidunt nulla sed placerat semper. Etiam rhoncus ligula et facilisis tristique. Morbi lectus lectus, consectetur eu mattis vel, tincidunt pretium odio. Quisque ac justo dapibus, dapibus metus ac, interdum orci. Vivamus ac eros vel lacus venenatis condimentum. Nam fermentum et nunc non elementum. Vestibulum eleifend auctor ex, eu imperdiet erat aliquet ac.</p>
 
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. <a href="#">Vestibulum</a> tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
 
             <p>Nunc tempus vel nulla quis lacinia. Nunc convallis ultrices ligula, ornare viverra nisi rhoncus non. Nunc congue urna tortor, ut sagittis tellus vehicula et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse viverra orci enim, vitae efficitur magna efficitur et. Curabitur dignissim, diam a porta eleifend, odio mauris vehicula est, et pharetra tortor erat dictum quam. Integer vitae mattis ligula. Sed ac justo nisl. Curabitur feugiat lacus quam, eget dapibus nisi cursus at. In eget rutrum sapien. Aliquam erat volutpat. Nam vel velit ex. Integer diam tellus, pellentesque nec consequat in, feugiat vel libero. Nunc magna felis, viverra vel mauris vel, suscipit dapibus neque. Etiam ultrices arcu mi, eu porttitor enim laoreet vel. Cras sit amet neque sed mi feugiat placerat.</p>
 
@@ -36,7 +37,7 @@
         </section>
 
         <!--     b) faq: list of frequently asked questions -->
-        <section id="faq">
+        <section id="faq" class="styled">
             <h2>F.A.Q.</h2>
             
             <ol>
@@ -86,13 +87,15 @@
  
         <!--   3. footer that has copyright. copy of links from the header, link to terms of service, etc. -->
         <footer>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#faq">F.A.Q.</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-                <li><a href="#register">Register</a></li>
-                <li><a href="http://example.com">ToS</a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#faq">F.A.Q.</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#register">Register</a></li>
+                    <li><a href="http://example.com">ToS</a></li>
+                </ul>
+            </nav>
 
             <p>&copy; New New York city officials, 5,000,000,053</p>
         </footer>

@@ -1,0 +1,187 @@
+/****** Generic styles ******/
+
+*{
+ padding: 0;
+ margin: 0;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+h1 {
+  text-align: center;
+}
+
+h4 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.lefty_image {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.righty_image {
+  float: right;
+  margin-left: 30px;
+}
+
+.lefty_image, .righty_image {
+  width: 150px;
+}
+
+/****** Page structure ******/
+
+section {
+  border-bottom: 3px solid;
+  clear: both;
+  overflow: auto;
+  padding: 15px;
+}
+
+section:first-of-type {
+  border-top: 4px solid;
+  margin-top: 5px;
+}
+
+#container {
+  max-width: 1010px;
+  margin: 0px auto;
+  border-left: 3px solid;
+  border-right: 3px solid;
+}
+
+/****** Nav block ******/
+
+#head {
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+
+  display: box;
+  display: -moz-box;
+  display: -o-box;
+  display: -ms-box;
+  display: -webkit-box;
+
+  box-orient:horizontal;
+  o-box-orient:horizontal;
+  -moz-box-orient:horizontal;
+  -ms-box-orient:horizontal;
+  -webkit-box-orient:horizontal;
+  width: 100%;
+}
+
+#head a {
+  box-flex:1;
+  -webkit-box-flex:1;
+  -moz-box-flex:1;
+  -ms-box-flex:1;
+
+  text-align: center;
+  padding: 10px 0;
+
+  display: inline-block;
+  float: left;
+  width: 25%;
+  border-right: 3px solid black;
+
+  font-size: 130%;
+  color: black;
+  text-decoration: none;
+}
+
+#head a:last-child {
+  border: 0px;
+}
+
+/****** About block ******/
+
+#faq p {
+  margin-left: 70px;
+}
+
+/****** Contacts block ******/
+
+#contacts *:not(h1) {
+  font-size: 110%;
+}
+
+#contacts ul {
+  list-style: none;
+  display: table;
+}
+
+#contacts ul li {
+  display: table-row;
+}
+
+#contacts ul li span {
+  display: table-cell;
+}
+
+#contacts .description {
+  padding-right: 10px;
+  padding-bottom: 30px;
+}
+
+#contacts img {
+  border: 1px solid;
+  margin: 15px;
+}
+
+/****** Register block ******/
+
+#register label {
+  width: 20%;
+  float: left;
+  display: inline-block;
+}
+
+#register input {
+  width: 70%;
+  float: left;
+}
+
+#register input[type=checkbox], #register label[for=OK] {
+  width: auto;
+  float: left;
+  margin: 15px 0px;
+}
+
+#register form {
+  display: block;
+  width: 500px;
+  margin: 20px auto;
+}
+
+/****** Bottom block itself ******/
+
+#bottom {
+  border-bottom: 3px solid black;
+}
+
+/****** Bottom nav block ******/
+#bottom nav{
+  width: 40%;
+  margin-left: 0px auto;
+  border-right: 3px solid black;
+  display: inline-block;
+  background-color: grey;
+}
+
+/****** Feedback block ******/
+#feedback {
+  margin-right: 0px auto;
+  display: inline-block;
+  padding: 0px;
+  border: none;
+}
+
+/****** Footer block ******/
+footer {
+  text-align: center;
+  padding: 5px 0px;
+}

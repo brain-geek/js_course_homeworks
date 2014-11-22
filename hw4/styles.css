@@ -206,3 +206,77 @@ footer {
   text-align: center;
   padding: 5px 0px;
 }
+
+
+/****** Responsive ******/
+
+@media screen and (max-width:980px) {
+  #container {
+    max-width: none;
+    width: 100%;
+    border:0px none;
+  }
+
+  #bottom nav li {
+    display: inline-block;
+    width: 19%;
+
+    border-right: 1px solid;
+  }
+
+  #bottom nav li:last-child {
+    border-right: 0px none;
+  }
+}
+
+@media screen and (max-width:570px) {
+  #head {
+    display: block;
+  }
+
+  #head a {
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid;
+  }
+
+  #head a:last-child {
+    border-bottom: 0px;
+  }
+
+  #about img {
+    display: none;
+  }
+
+  #faq p {
+    margin-left: 20px;
+  }
+
+  #register {
+    display: none;
+  }
+
+  #contacts .description {
+    display: none;
+  }
+
+  #bottom nav {
+    display: none;
+  }
+
+  #feedback {
+    width: 100%;
+    display: block;
+  }
+
+  #feedback button {
+    float: right;
+    width: 30%;
+  }
+
+  #feedback span {
+    display: block;
+    width: 60%;
+  }
+
+}

@@ -172,12 +172,33 @@ section:first-of-type {
   background-color: grey;
 }
 
+#bottom nav ul {
+  list-style: none;
+  margin: 20px;
+}
+
+#bottom nav li {
+  margin-bottom: 5px;
+}
+
+#bottom nav li:last-child {
+  margin-bottom: 0px;
+}
+
+#bottom nav li a {
+  color: red;
+}
+
+
 /****** Feedback block ******/
 #feedback {
   margin-right: 0px auto;
   display: inline-block;
-  padding: 0px;
   border: none;
+}
+
+#feedback .feedback {
+  padding-top: 10px;
 }
 
 /****** Footer block ******/

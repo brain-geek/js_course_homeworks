@@ -161,6 +161,8 @@ section:first-of-type {
 
 #bottom {
   border-bottom: 3px solid black;
+  box-sizing: border-box;
+  overflow: auto;
 }
 
 /****** Bottom nav block ******/
@@ -170,11 +172,13 @@ section:first-of-type {
   border-right: 3px solid black;
   display: inline-block;
   background-color: grey;
+  float: left;
+  box-sizing: border-box;
 }
 
 #bottom nav ul {
   list-style: none;
-  margin: 20px;
+  margin: 10px;
 }
 
 #bottom nav li {
@@ -195,12 +199,24 @@ section:first-of-type {
   margin-right: 0px auto;
   display: inline-block;
   border: none;
+  width: 60%;
+  box-sizing: border-box;
+  position: relative;
 }
 
 #feedback .feedback {
   padding-top: 10px;
+  padding-right: 80px;
 }
 
+#feedback button {
+  display: block;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
 /****** Footer block ******/
 footer {
   text-align: center;
@@ -219,9 +235,16 @@ footer {
 
   #bottom nav li {
     display: inline-block;
-    width: 19%;
+    width: 20%;
+
+    box-sizing: border-box;
+    display: block;
+    float: left;
 
     border-right: 1px solid;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   #bottom nav li:last-child {
